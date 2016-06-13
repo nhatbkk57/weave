@@ -33,6 +33,9 @@ post_comment() {
             https://api.github.com/repos/weaveworks/weave/issues/$GH_PR/comments > /dev/null
 }
 
+# Temporarily disable publishing to dev-weavewww
+exit 0
+
 install_wordepress v1.0.0
 
 cd $SRCDIR

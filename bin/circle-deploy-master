@@ -13,6 +13,9 @@ if [ -z "$SKIP_TESTS" ] ; then
     make publish
 fi
 
+# Temporarily disable publishing to dev-weavewww
+exit 0
+
 install_wordepress v1.0.0
 
 cd $SRCDIR
